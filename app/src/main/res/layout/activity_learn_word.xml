@@ -14,6 +14,7 @@
         android:layout_marginTop="44dp"
         android:layout_marginEnd="327dp"
         android:background="@android:color/transparent"
+        android:contentDescription="Close app"
         android:src="@drawable/ic_close"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +30,8 @@
         android:textSize='50sp'
         app:layout_constraintTop_toBottomOf="@id/closeButton"
         tools:layout_editor_absoluteX="32dp"
-        tools:text="tools text" />
+        tools:text="tools text"
+        android:fontFamily="@font/nunito_bold"/>
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -56,7 +58,8 @@
                 android:gravity="center"
                 android:text="1"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_regular"/>
 
             <TextView
                 android:layout_width="235dp"
@@ -64,7 +67,8 @@
                 android:layout_margin="8dp"
                 android:text="Сломать"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/rubic_regular"/>
         </LinearLayout>
 
         <LinearLayout
@@ -83,7 +87,8 @@
                 android:gravity="center"
                 android:text="2"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_regular"/>
 
             <TextView
                 android:layout_width="235dp"
@@ -91,7 +96,8 @@
                 android:layout_margin="8dp"
                 android:text="Сломать"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/rubic_regular"/>
         </LinearLayout>
 
         <LinearLayout
@@ -110,7 +116,8 @@
                 android:gravity="center"
                 android:text="3"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_regular"/>
 
             <TextView
                 android:layout_width="235dp"
@@ -118,7 +125,8 @@
                 android:layout_margin="8dp"
                 android:text="Сломать"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/rubic_regular"/>
         </LinearLayout>
 
         <LinearLayout
@@ -137,7 +145,8 @@
                 android:gravity="center"
                 android:text="4"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/nunito_regular"/>
 
             <TextView
                 android:layout_width="235dp"
@@ -145,7 +154,8 @@
                 android:layout_margin="8dp"
                 android:text="Сломать"
                 android:textColor="#888992"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:fontFamily="@font/rubic_regular"/>
         </LinearLayout>
     </LinearLayout>
 
@@ -156,6 +166,7 @@
         android:text="Skip"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
+        android:contentDescription="Skip unknown word"
         android:layout_marginBottom="30dp"
         android:backgroundTint="#2574FF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -178,6 +189,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="18dp"
             android:layout_marginStart="36dp"
+            android:contentDescription="image of correct"
             android:src="@drawable/ic_thumb_correct"
             tools:layout_editor_absoluteX="40dp"
             tools:layout_editor_absoluteY="21dp"
@@ -191,16 +203,19 @@
             android:textColor="#FFFFFF"
             android:text="Correct"
             android:textSize="22sp"
+            android:fontFamily="@font/rubic_regular"
             app:layout_constraintStart_toEndOf="@id/ic_correct"
             app:layout_constraintTop_toTopOf="@id/ic_correct"
             app:layout_constraintBottom_toBottomOf="@id/ic_correct"/>
 
-        <Button
+        <android.widget.Button
             android:layout_width="0dp"
             android:layout_height="58dp"
             android:text="Continue"
+            android:textSize="16sp"
             android:textAllCaps="true"
             android:textColor="#0EAD69"
+            android:fontFamily="@font/nunito_bold"
             android:layout_marginTop="12dp"
             android:layout_marginStart="32dp"
             android:layout_marginEnd="32dp"
