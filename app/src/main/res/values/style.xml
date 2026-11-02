@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="VariantsStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/textVariantsColor</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/rubic_regular</item>
+    </style>
+</resources>

@@ -1,3 +1,17 @@
 <resources>
-    <string name="app_name">Kotlin4</string>
+    <string name="app_name" translatable="false">Kotlin4</string>
+    <string name="button_continue">Continue</string>
+    <string name="button_skip">Skip</string>
+    <string name="textview_main_word" translatable="false">Galaxy</string>
+    <string name="button_close_description">Close app</string>
+    <string name="textview_first_variant" translatable="false">1</string>
+    <string name="textview_second_variant" translatable="false">2</string>
+    <string name="textview_fourth_variant" translatable="false">4</string>
+    <string name="textview_third_variant" translatable="false">3</string>
+    <string name="textview_correct_text">Correct</string>
+    <string name="textview_fourth_word" translatable="false">Сломать</string>
+    <string name="textview_third_word" translatable="false">Сломать</string>
+    <string name="textview_second_word" translatable="false">Сломать</string>
+    <string name="textview_first_word" translatable="false">Сломать</string>
+    <string name="button_skip_description">Skip unknown word</string>
 </resources>

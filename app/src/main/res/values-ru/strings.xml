@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kotlin4</string>
+    <string name="button_continue">Продолжить</string>
+    <string name="button_skip">Пропустить</string>
+    <string name="textview_main_word">Galaxy</string>
+    <string name="button_close_description">Закрыть приложение</string>
+    <string name="textview_first_variant">1</string>
+    <string name="textview_second_variant">2</string>
+    <string name="textview_fourth_variant">4</string>
+    <string name="textview_third_variant">3</string>
+    <string name="textview_correct_text">Правильно</string>
+    <string name="textview_fourth_word">Сломать</string>
+    <string name="textview_third_word">Сломать</string>
+    <string name="textview_second_word">Сломать</string>
+    <string name="textview_first_word">Сломать</string>
+    <string name="button_skip_description">Пропустить незнакомое слово</string>
+</resources>
