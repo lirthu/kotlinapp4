@@ -9,9 +9,9 @@
     <string name="textview_fourth_variant" translatable="false">4</string>
     <string name="textview_third_variant" translatable="false">3</string>
     <string name="textview_correct_text">Correct</string>
-    <string name="textview_fourth_word" translatable="false">Сломать</string>
-    <string name="textview_third_word" translatable="false">Сломать</string>
-    <string name="textview_second_word" translatable="false">Сломать</string>
-    <string name="textview_first_word" translatable="false">Сломать</string>
+    <string name="textview_fourth_word" translatable="false">Робот</string>
+    <string name="textview_third_word" translatable="false">Галактика</string>
+    <string name="textview_second_word" translatable="false">Бургер</string>
+    <string name="textview_first_word" translatable="false">Слон</string>
     <string name="button_skip_description">Skip unknown word</string>
 </resources>
