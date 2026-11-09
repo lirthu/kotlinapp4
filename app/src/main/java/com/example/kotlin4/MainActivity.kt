@@ -26,7 +26,13 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.layoutThirdVariant.setOnClickListener {
-            it.isVisible = false
+            markAnswerCorrect()
+        }
+        binding.layoutFirstVariant.setOnClickListener {
+            markAnswerWrong()
+        }
+        binding.btnContinue.setOnClickListener {
+            markAnswerNeutral()
         }
 
 //        val tvMainWord: TextView = findViewById(R.id.tvMainWord)
@@ -39,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             tvMainWord.setTextColor(Color.GRAY)
             btnCloseButton.isVisible = false
             tvFioStudent.text = "Выполнил Краснов Артём Владиславович 407ИС-23"
+
         }
     }
     private fun markAnswerCorrect() {
@@ -89,5 +96,92 @@ class MainActivity : AppCompatActivity() {
             )
         )
         binding.layoutInfoBlock.isVisible = true
+    }
+    private fun markAnswerWrong() {
+        binding.layoutFirstVariant.setBackground(
+            ContextCompat.getDrawable(
+                this@MainActivity,
+                R.drawable.shape_rounded_containers_wrong,
+            )
+        )
+
+        binding.tvFirstNumberVariant.background = ContextCompat.getDrawable(
+            this@MainActivity,
+            R.drawable.shape_rounded_variants_wrong,
+        )
+
+        binding.tvFirstNumberVariant.setTextColor(
+            ContextCompat.getColor(
+                this@MainActivity,
+                R.color.white,
+            )
+        )
+
+        binding.tvFirstWordVariant.setTextColor(
+            ContextCompat.getColor(
+                this@MainActivity,
+                R.color.wrongAnswerColor,
+            )
+        )
+        binding.btnSkipButton.isVisible = false
+        binding.layoutInfoBlock.setBackgroundColor(
+            ContextCompat.getColor(
+                this@MainActivity,
+                R.color.wrongAnswerColor,
+            )
+        )
+        binding.ivIconOrrect.setImageDrawable(
+            ContextCompat.getDrawable(
+                this@MainActivity,
+                R.drawable.ic_thumb_wrong,
+            )
+        )
+        binding.tvCorrectWord.text = resources.getString(R.string.textview_correct_text)
+        binding.btnContinue.setTextColor(
+            ContextCompat.getColor(
+                this@MainActivity,
+                R.color.wrongAnswerColor,
+            )
+        )
+        binding.layoutInfoBlock.isVisible = true
+    }
+
+
+    private fun markAnswerNeutral() {
+        with(binding) {
+            for (layout in listOf(layoutFirstVariant, layoutThirdVariant)) {
+                layout.background = ContextCompat.getDrawable(
+                    this@MainActivity,
+                    R.drawable.shape_rounded_containers,
+                )
+            }
+            for (textView in listOf(tvFirstWordVariant, tvThirdWordVariant)) {
+                textView.setTextColor(
+                    ContextCompat.getColor(
+                        this@MainActivity,
+                        R.color.textVariantsColor,
+                    )
+                )
+            }
+            for (textView in listOf(tvFirstNumberVariant, tvThirdNumberVariant)) {
+                textView.apply {
+                    background = ContextCompat.getDrawable(
+                        this@MainActivity,
+                        R.drawable.shape_rounded_variants,
+                    )
+                    setTextColor(
+                        ContextCompat.getColor(
+                            this@MainActivity,
+                            R.color.textVariantsColor,
+                        )
+                    )
+                }
+            }
+            layoutInfoBlock.isVisible = false
+            btnSkipButton.isVisible = true
+        }
+
+
+
     }
 }

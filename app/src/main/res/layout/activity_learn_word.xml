@@ -176,15 +176,21 @@
         </LinearLayout>
     </LinearLayout>
 
-    <Button
+    <android.widget.Button
         android:id="@+id/btnSkipButton"
-        android:layout_width="310dp"
+        android:layout_width="0dp"
         android:layout_height="58dp"
         android:text="@string/button_skip"
         android:textAllCaps="true"
         android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:fontFamily="@font/nunito_bold"
         android:contentDescription="@string/button_skip_description"
-        android:layout_marginBottom="30dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/shape_rounded_button"
         android:backgroundTint="@color/buttonBlueColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

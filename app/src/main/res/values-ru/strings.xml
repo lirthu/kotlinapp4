@@ -10,6 +10,7 @@
     <string name="textview_fourth_variant">4</string>
     <string name="textview_third_variant">3</string>
     <string name="textview_correct_text">Правильно</string>
+    <string name="textview_wrong_text">Неправильно</string>
     <string name="textview_fourth_word">Сломать</string>
     <string name="textview_third_word">Сломать</string>
     <string name="textview_second_word">Сломать</string>
